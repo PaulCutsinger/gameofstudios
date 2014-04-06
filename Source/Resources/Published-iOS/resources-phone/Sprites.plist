@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>Sprites/JesseLeftArm.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{25, 1015}, {18, 6}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {18, 6}}</string>
+			<key>sourceSize</key>
+			<string>{18, 6}</string>
+		</dict>
+		<key>Sprites/JessePic.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 955}, {50, 50}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {50, 50}}</string>
+			<key>sourceSize</key>
+			<string>{50, 50}</string>
+		</dict>
+		<key>Sprites/JessePicSmall.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{80, 985}, {25, 25}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {25, 25}}</string>
+			<key>sourceSize</key>
+			<string>{25, 25}</string>
+		</dict>
+		<key>Sprites/JesseRightArm.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{25, 1007}, {18, 6}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {18, 6}}</string>
+			<key>sourceSize</key>
+			<string>{18, 6}</string>
+		</dict>
+		<key>Sprites/JesseSmallAlpha.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{53, 985}, {25, 25}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {25, 25}}</string>
+			<key>sourceSize</key>
+			<string>{25, 25}</string>
+		</dict>
+		<key>Sprites/amazon-icon-final-114px.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{53, 955}, {28, 28}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {28, 28}}</string>
+			<key>sourceSize</key>
+			<string>{28, 28}</string>
+		</dict>
+		<key>Sprites/deviceSizes.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 478}, {640, 475}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {640, 475}}</string>
+			<key>sourceSize</key>
+			<string>{640, 475}</string>
+		</dict>
+		<key>Sprites/deviceSizesMuted.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1}, {640, 475}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {640, 475}}</string>
+			<key>sourceSize</key>
+			<string>{640, 475}</string>
+		</dict>
+		<key>Sprites/peggray.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1007}, {10, 10}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {10, 10}}</string>
+			<key>sourceSize</key>
+			<string>{10, 10}</string>
+		</dict>
+		<key>Sprites/peggreen.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{13, 1007}, {10, 10}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {10, 10}}</string>
+			<key>sourceSize</key>
+			<string>{10, 10}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>size</key>
+		<string>{1024, 1024}</string>
+		<key>textureFileName</key>
+		<string>Sprites.png</string>
+	</dict>
+</dict>
+</plist>
