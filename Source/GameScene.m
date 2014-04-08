@@ -12,6 +12,7 @@
 #import "Foundation/NSObject.h"
 #import <tgmath.h>
 #import "Peg.h"
+#import "GlobalVariables.h"
 
 @implementation GameScene {
     CCPhysicsNode *_physicsNode;
@@ -81,7 +82,7 @@
     CGFloat _timePerDay;
     CGFloat _currentDay;
     NSInteger _countOfPegs;
-    NSInteger _level; // for switch of level in game
+    int _level; // for switch of level in game
     
 }
 
@@ -136,6 +137,15 @@
    // [self setLevel3];
    [self gameLoop:_level]; // Start switch
     [self makePeg];
+    
+    
+    //Example of using global variables. Need to move global vars to GlobalVariables.m
+    //testing global variables
+    NSLog(@"before: %0.1f",[GlobalVariables sharedInstance].testFloat);
+    [GlobalVariables sharedInstance].testFloat=100.0;
+    NSLog(@"after: %0.1f",[GlobalVariables sharedInstance].testFloat);
+    //works!!
+    
     
     
 }
@@ -449,6 +459,7 @@
             [_physicsNode addChild:greenPeg];
             [_physicsNode removeChild:node];
             break;
+            
         }
 
     }
@@ -583,6 +594,7 @@
         if (_currentDay>=30) {
             _30DayRetained=_7DayRetained*.4;
             _30DayScoreLabel.string = [NSString stringWithFormat:@"%1.0f", (CGFloat)_30DayRetained];
+            
         }
    
    if(_dollars >= 200){ 
