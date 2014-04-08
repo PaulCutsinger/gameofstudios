@@ -142,14 +142,14 @@
     //Make a peg that's a phy
     Peg *engagementPeg = [[Peg alloc] init];
     engagementPeg.value=4.0;
-    BOOL isPhysics = engagementPeg.physicsNode;
+    //BOOL isPhysics = engagementPeg.physicsNode;
     engagementPeg.physicsBody = [CCPhysicsBody bodyWithRect:CGRectMake(0, 0, 10, 10) cornerRadius:0.0];
     engagementPeg.physicsBody.type = CCPhysicsBodyTypeStatic;
     //engagementPeg.
     engagementPeg.position = CGPointMake(100.0f, 100.0f);
     engagementPeg.physicsBody.collisionType = @"PayBox";
     engagementPeg.zOrder=-10;
-    NSLog(@"%d",isPhysics );
+    //NSLog(@"%d",isPhysics );
     
     [_physicsNode addChild:engagementPeg];
     
