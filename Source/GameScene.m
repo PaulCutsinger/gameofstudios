@@ -7,28 +7,23 @@
 //
 
 
-
-
-
-// Making a change to test GIT
-
 #import "GameScene.h"
 #import "Foundation/NSSet.h"
 #import "Foundation/NSObject.h"
 #import <tgmath.h>
-
-
+#import "Peg.h"
 
 @implementation GameScene {
     CCPhysicsNode *_physicsNode;
     CCNode *_field;
     NSInteger _points;
-    CGFloat _playerCount;
+    CGFloat _playerCount; //cleanup: delete?
     NSInteger _impressions;
     CGFloat _dollars;
     CGFloat _installs;
     //CGFloat _deltaInstalls;
     //CGFloat _previousInstalls;
+
     CGFloat _1DayRetained;
     CGFloat _3DayRetained;
     CGFloat _7DayRetained;
@@ -137,8 +132,43 @@
     [self showScoreBoard:isAnalyticsOn];
     
     [self setLevel3];
+    [self makePeg];
+    
     
 }
+
+-(void)makePeg {
+    
+    //Make a peg that's a phy
+    Peg *engagementPeg = [[Peg alloc] init];
+    engagementPeg.value=4.0;
+    //BOOL isPhysics = engagementPeg.physicsNode;
+    engagementPeg.physicsBody = [CCPhysicsBody bodyWithRect:CGRectMake(0, 0, 10, 10) cornerRadius:0.0];
+    engagementPeg.physicsBody.type = CCPhysicsBodyTypeStatic;
+    //engagementPeg.
+    engagementPeg.position = CGPointMake(100.0f, 100.0f);
+    engagementPeg.physicsBody.collisionType = @"PayBox";
+    engagementPeg.zOrder=-10;
+    //NSLog(@"%d",isPhysics );
+    
+    [_physicsNode addChild:engagementPeg];
+    
+    
+    CCNodeColor *background = [CCNodeColor nodeWithColor:[CCColor colorWithRed:1.0f green:0.2f blue:0.2f alpha:1.0f]];
+        [background setContentSize:CGSizeMake(10, 10)];
+    NSString *value = [NSString stringWithFormat:@"$%0.1f",engagementPeg.value];
+    CCLabelTTF *pegLabel = [CCLabelTTF labelWithString:value fontName:@"Helvetica" fontSize:8];
+    pegLabel.zOrder=11;
+    
+    [engagementPeg addChild:pegLabel];
+    [engagementPeg addChild:background];
+  
+    
+    }
+
+
+
+
 
 -(void)showScoreBoard :(BOOL) isShown {
     
@@ -261,11 +291,6 @@
         //Get actual screensize
         
         //CGRect screenBounds = [[UIScreen mainScreen] bounds];
-        
-        
-        
-
-        
     
         //NSLog(@"lowerLeft:%@ width:%0.1f height:%0.1f",NSStringFromCGPoint(lowerLeftFieldInWorld), fieldWidth,fieldHeight);
         x=column*fieldWidth/(widthGrid-1)+lowerLeftFieldInWorld.x;
@@ -302,13 +327,6 @@
         }
         
         
-        
-        
-        
-        
-
-        
-        
     
 }
 
@@ -335,6 +353,8 @@
 
 
 -(void)setMoneyBox:(CGFloat)x :(CGFloat)y :(CGFloat)v {
+    //cleanup. This method should be setPayBox rather than setMoneyBox
+    
     
     CCNode* payBox =[CCBReader load:@"PayBox"];
     CGPoint location = CGPointMake(x, y);
@@ -430,6 +450,7 @@
 
 #pragma onTouch
 - (void)launchBlock:(CGPoint)location {
+    //cleanup: "launchBlock" should be named spawn ragdoll or maybe player. "ball" should also be renamed to ragdoll or maybe player...
     
     CCNode* ball = [CCBReader load:@"Ragdoll"];
     ball.position = location;
@@ -475,7 +496,7 @@
     }
     
     _impressions++;
-    _playerCount++;
+    _playerCount++; //cleanup: delete?
 
     _installs=_impressions*_oddsToInstall;
 
@@ -683,3 +704,5 @@
  Dollars go below zero
  
  */
+
+
