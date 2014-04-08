@@ -159,7 +159,7 @@
     }
 }
         
-    }
+
 
 -(void)makePeg {
     
@@ -688,7 +688,7 @@
     
 }
 
--(void)ResetGame {
+-(void)resetGame {
     [self resetAll];
 }
 
