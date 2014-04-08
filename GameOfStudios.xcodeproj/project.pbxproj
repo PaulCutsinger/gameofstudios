@@ -39,6 +39,7 @@
 		FE159F4818EB5F2B007DB081 /* GrayPeg.m in Sources */ = {isa = PBXBuildFile; fileRef = FE159F4718EB5F2B007DB081 /* GrayPeg.m */; };
 		FE159F5B18F087A0007DB081 /* PayBox.m in Sources */ = {isa = PBXBuildFile; fileRef = FE159F5A18F087A0007DB081 /* PayBox.m */; };
 		FE159F6118F3299C007DB081 /* Peg.m in Sources */ = {isa = PBXBuildFile; fileRef = FE159F6018F3299C007DB081 /* Peg.m */; };
+		FE788B1818F459EE00FBBDF7 /* GlobalVariables.m in Sources */ = {isa = PBXBuildFile; fileRef = FE788B1718F459EE00FBBDF7 /* GlobalVariables.m */; };
 		FE9EF2EF18E32B330035B4ED /* Ball.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9EF2EE18E32B330035B4ED /* Ball.m */; };
 		FE9EF2F318E32C5E0035B4ED /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9EF2F218E32C5E0035B4ED /* GameScene.m */; };
 		FEF1A9FB18E634DE00528957 /* GreenPeg.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF1A9FA18E634DE00528957 /* GreenPeg.m */; };
@@ -103,6 +104,8 @@
 		FE159F5A18F087A0007DB081 /* PayBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PayBox.m; path = Source/PayBox.m; sourceTree = "<group>"; };
 		FE159F5F18F3299C007DB081 /* Peg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Peg.h; path = Source/Peg.h; sourceTree = "<group>"; };
 		FE159F6018F3299C007DB081 /* Peg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Peg.m; path = Source/Peg.m; sourceTree = "<group>"; };
+		FE788B1618F459EE00FBBDF7 /* GlobalVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlobalVariables.h; path = Source/GlobalVariables.h; sourceTree = "<group>"; };
+		FE788B1718F459EE00FBBDF7 /* GlobalVariables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlobalVariables.m; path = Source/GlobalVariables.m; sourceTree = "<group>"; };
 		FE9EF2ED18E32B330035B4ED /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ball.h; path = Source/Ball.h; sourceTree = "<group>"; };
 		FE9EF2EE18E32B330035B4ED /* Ball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Ball.m; path = Source/Ball.m; sourceTree = "<group>"; };
 		FE9EF2F118E32C5E0035B4ED /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = Source/GameScene.h; sourceTree = "<group>"; };
@@ -151,6 +154,8 @@
 				FEF1A9FA18E634DE00528957 /* GreenPeg.m */,
 				FE9EF2F118E32C5E0035B4ED /* GameScene.h */,
 				FE9EF2F218E32C5E0035B4ED /* GameScene.m */,
+				FE788B1618F459EE00FBBDF7 /* GlobalVariables.h */,
+				FE788B1718F459EE00FBBDF7 /* GlobalVariables.m */,
 				FE159F4618EB5F2B007DB081 /* GrayPeg.h */,
 				FE159F4718EB5F2B007DB081 /* GrayPeg.m */,
 				FE9EF2ED18E32B330035B4ED /* Ball.h */,
@@ -353,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE788B1818F459EE00FBBDF7 /* GlobalVariables.m in Sources */,
 				FEF1A9FB18E634DE00528957 /* GreenPeg.m in Sources */,
 				FE9EF2EF18E32B330035B4ED /* Ball.m in Sources */,
 				FE159F5B18F087A0007DB081 /* PayBox.m in Sources */,
