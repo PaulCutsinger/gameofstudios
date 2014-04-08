@@ -81,6 +81,7 @@
     CGFloat _timePerDay;
     CGFloat _currentDay;
     NSInteger _countOfPegs;
+    NSInteger _level; // for switch of level in game
     
 }
 
@@ -96,6 +97,7 @@
     // set this class as delegate
     _physicsNode.collisionDelegate = self;
     // set collision txpe
+    _level = 1;  //global start level of game
     [self resetAll];
     
 }
@@ -131,11 +133,33 @@
     [self clearScoreBoard];
     [self showScoreBoard:isAnalyticsOn];
     
-    [self setLevel3];
+   // [self setLevel3];
+   [self gameLoop:_level]; // Start switch
     [self makePeg];
     
     
 }
+
+-(void)gameLoop:(int)level{
+    
+    switch(level){
+        case 1:
+        [self setLevel1];
+        break;
+        case 2:
+        [self setLevel2];
+        break;
+        case 3:
+        [self setLevel3];
+        break;
+        default: // should end game here
+        _level = 1;
+        [self resetGame];
+        break;
+    }
+}
+        
+
 
 -(void)makePeg {
     
@@ -527,7 +551,6 @@
     
    
     
-    
     //NSLog(@"%f",delta);
     
     
@@ -562,6 +585,11 @@
             _30DayScoreLabel.string = [NSString stringWithFormat:@"%1.0f", (CGFloat)_30DayRetained];
         }
    
+   if(_dollars >= 200){ 
+        _level = _level +1;
+        [self resetAll];
+    }
+    
 }
 
 #pragma Collisions
@@ -660,7 +688,7 @@
     
 }
 
--(void)ResetGame {
+-(void)resetGame {
     [self resetAll];
 }
 

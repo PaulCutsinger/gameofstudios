@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "605"
             endingLineNumber = "605"
-            landmarkName = "-ccPhysicsCollisionBegin:ball:bottomBounds:"
+            landmarkName = "-ccPhysicsCollisionBegin:ball:greenPeg:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -47,8 +47,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "359"
             endingLineNumber = "359"
-            landmarkName = "-setMoneyBox:::"
-            landmarkType = "5">
+            landmarkName = "@implementation GameScene"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -63,7 +63,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "143"
             endingLineNumber = "143"
-            landmarkName = "-makePeg"
+            landmarkName = "-gameLoop:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -79,7 +79,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "145"
             endingLineNumber = "145"
-            landmarkName = "-makePeg"
+            landmarkName = "-gameLoop:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
