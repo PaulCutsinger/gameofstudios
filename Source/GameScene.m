@@ -12,6 +12,7 @@
 #import "Foundation/NSObject.h"
 #import <tgmath.h>
 #import "Peg.h"
+#import "GlobalVariables.h"
 
 @implementation GameScene {
     CCPhysicsNode *_physicsNode;
@@ -137,6 +138,12 @@
    [self gameLoop:_level]; // Start switch
     [self makePeg];
     
+    //Example of using global variables. Need to move global vars to GlobalVariables.m
+    //testing global variables
+    NSLog(@"before: %0.1f",[GlobalVariables sharedInstance].testFloat);
+    [GlobalVariables sharedInstance].testFloat=100.0;
+    NSLog(@"after: %0.1f",[GlobalVariables sharedInstance].testFloat);
+    //works!!
     
 }
 
