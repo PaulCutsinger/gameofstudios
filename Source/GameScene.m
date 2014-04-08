@@ -550,10 +550,6 @@
     //_playerCountLabel.string = [NSString stringWithFormat:@"%1.0f", (CGFloat)_playerCount];
     
    
-    if(_dollars >= 200){ 
-        _level = _level +1;
-        [self resetAll];
-    }
     
     //NSLog(@"%f",delta);
     
@@ -589,6 +585,11 @@
             _30DayScoreLabel.string = [NSString stringWithFormat:@"%1.0f", (CGFloat)_30DayRetained];
         }
    
+   if(_dollars >= 200){ 
+        _level = _level +1;
+        [self resetAll];
+    }
+    
 }
 
 #pragma Collisions
